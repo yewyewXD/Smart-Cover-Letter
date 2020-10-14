@@ -144,11 +144,14 @@ export default function Ineligible() {
               I love everything related to ReactJS, from static to server-side.
               I can code up to 11 hours every day just because I love it. I'm
               not a {role}, but I would be happy to learn anything if I could
-              get a chance to be a part of {company}. I’m willing to take other
-              position that benefits my skillset.
+              get a chance to be a part of {company}.
             </p>
 
-            <p>Please take a look at my portfolio: https://yewkangwei.com/</p>
+            <p>
+              I’m willing to take other position that benefits my skillset.
+              <br />
+              Please take a look at my portfolio: https://yewkangwei.com/
+            </p>
 
             <p>
               I’m willing to take $15k per year of salary and work fully in the
