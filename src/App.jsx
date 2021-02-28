@@ -1,8 +1,7 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Eligible from "./pages/Eligible";
-import Ineligible from "./pages/Ineligible";
+// import Ineligible from "./pages/Ineligible";
 import SelectBar from "./components/SelectBar";
 
 function App() {
@@ -14,8 +13,8 @@ function App() {
       <main>
         <Switch>
           <Redirect from="/" to="eligible" exact />
-          <Route path="/eligible" component={Eligible} exact />
-          <Route path="/ineligible" component={Ineligible} exact />
+          <Route path="/eligible" component={Eligible} />
+          <Route path="/ineligible" component={Eligible} />
         </Switch>
       </main>
     </BrowserRouter>

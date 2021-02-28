@@ -8,7 +8,7 @@ export default function SelectBar() {
         Eligible
       </Link>
       <Link to="/ineligible" className="btn btn-md btn-outline-danger mx-4">
-        Ineligible
+        Ineligible (deprecated)
       </Link>
     </div>
   );
