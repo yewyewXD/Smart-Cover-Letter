@@ -4,7 +4,7 @@ const EligibleText = ({ employer, company, mission, strength, weakness }) => {
   return (
     <>
       <p>
-        Dear {employer ? employer : "EMPLOYER_NAME"}, I'm a passionate and
+        Dear {employer ? employer : "EMPLOYER_NAME"}, I'm a very passionate and
         hardworking React frontend developer. People often see me as a friendly,
         motivational, and optimistic person.
       </p>
@@ -29,9 +29,9 @@ const EligibleText = ({ employer, company, mission, strength, weakness }) => {
       </p>
 
       <p>
-        I'm also a high-energy person, I would work 90 hours per week for{" "}
-        {company ? company : "COMPANY_NAME"} if I could have the chance to move
-        to France, because it's my dream to live there.
+        I'm also a high-energy person, I would work 90 hours per week, and I'm
+        ready to bring the development of {company ? company : "COMPANY_NAME"}{" "}
+        to the next level!
       </p>
 
       <p>I look forward to hearing back form you. Thank you in advance.</p>
@@ -40,6 +40,11 @@ const EligibleText = ({ employer, company, mission, strength, weakness }) => {
         Best regards,
         <br />
         Yew
+      </p>
+
+      <p>
+        **If you have decided that I'm not a good fit, please let me know how
+        can I improve, thank you!
       </p>
     </>
   );
