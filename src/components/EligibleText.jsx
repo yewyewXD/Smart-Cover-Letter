@@ -34,7 +34,7 @@ const EligibleText = ({ employer, company, mission, strength, weakness }) => {
         to the next level!
       </p>
 
-      <p>I look forward to hearing back form you. Thank you in advance.</p>
+      <p>I look forward to hearing back from you. Thank you in advance.</p>
 
       <p>
         Best regards,
@@ -44,7 +44,7 @@ const EligibleText = ({ employer, company, mission, strength, weakness }) => {
 
       <p>
         **If you have decided that I'm not a good fit, please let me know how
-        can I improve, thank you!
+        I can improve, thank you!
       </p>
     </>
   );
