@@ -19,8 +19,7 @@ const EligibleText = ({ employer, company, mission, strength, weakness }) => {
 
       <p>
         I'm also a high-energy person, I would work at least 90 hours a week,
-        and I'm ready to bring the development of{" "}
-        {company ? company : "COMPANY_NAME"} to the next level!
+        and I'm willing to learn anything!
       </p>
 
       <p>
