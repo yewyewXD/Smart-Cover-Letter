@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router'
 
 export default function SelectBar() {
   return (
@@ -11,5 +11,5 @@ export default function SelectBar() {
         Ineligible
       </Link>
     </div>
-  );
+  )
 }

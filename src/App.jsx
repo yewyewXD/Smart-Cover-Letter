@@ -1,9 +1,9 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import Eligible from "./pages/Eligible";
-import Ineligible from "./pages/Ineligible";
-import SelectBar from "./components/SelectBar";
+import React from 'react'
+// import 'bootstrap/dist/css/bootstrap.css'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router'
+import Eligible from './pages/Eligible.jsx'
+import Ineligible from './pages/Ineligible.jsx'
+import SelectBar from './components/SelectBar.jsx'
 
 function App() {
   return (
@@ -12,14 +12,14 @@ function App() {
         <SelectBar />
       </header>
       <main>
-        <Switch>
-          <Redirect from="/" to="eligible" exact />
-          <Route path="/eligible" component={Eligible} exact />
-          <Route path="/ineligible" component={Ineligible} exact />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Navigate to="/eligible" />} />
+          <Route path="/eligible" element={Eligible} />
+          <Route path="/ineligible" element={Ineligible} />
+        </Routes>
       </main>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
