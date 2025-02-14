@@ -143,10 +143,8 @@ export default function Eligible() {
             </p>
             <p>
               Please take a look at my portfolio:{' '}
-              <Link className="text-danger text-decoration-underline">
-                kangwei.dev
-              </Link>{' '}
-              (I’m willing to take other position that benefits my skillset)
+              <Link className="text-danger">kangwei.dev</Link> (I’m willing to
+              take other position that benefits my skillset)
             </p>
             <p>
               I love everything related to ReactJS, from static to server-side.

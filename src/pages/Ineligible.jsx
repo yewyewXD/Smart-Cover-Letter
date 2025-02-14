@@ -152,9 +152,7 @@ export default function Ineligible() {
               I’m willing to take other position that benefits my skillset.
               <br />
               Please take a look at my portfolio:{' '}
-              <Link className="text-danger text-decoration-underline">
-                kangwei.dev
-              </Link>
+              <Link className="text-danger">kangwei.dev</Link>
             </p>
 
             <p>
