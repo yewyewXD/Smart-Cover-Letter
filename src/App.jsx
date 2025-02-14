@@ -14,9 +14,15 @@ function App() {
         </header>
         <main>
           <Routes>
-            <Route path="/" element={<Navigate to="/eligible" />} />
-            <Route path="/eligible" element={<Eligible />} />
-            <Route path="/ineligible" element={<Ineligible />} />
+            <Route
+              path="/Smart-Cover-Letter/"
+              element={<Navigate to="/Smart-Cover-Letter/eligible" />}
+            />
+            <Route path="/Smart-Cover-Letter/eligible" element={<Eligible />} />
+            <Route
+              path="/Smart-Cover-Letter/ineligible"
+              element={<Ineligible />}
+            />
           </Routes>
         </main>
       </div>
