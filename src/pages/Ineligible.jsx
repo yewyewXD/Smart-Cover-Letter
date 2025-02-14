@@ -1,20 +1,21 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
+import { Link } from 'react-router'
 
 export default function Ineligible() {
-  const [employer, setEmployer] = useState("");
-  const [company, setCompany] = useState("");
-  const [role, setRole] = useState("");
-  const [mission, setMission] = useState("");
-  const [timezone, setTimezone] = useState("North America");
-  const [needW8Form, setNeedW8Form] = useState("Yes");
+  const [employer, setEmployer] = useState('')
+  const [company, setCompany] = useState('')
+  const [role, setRole] = useState('')
+  const [mission, setMission] = useState('')
+  const [timezone, setTimezone] = useState('North America')
+  const [needW8Form, setNeedW8Form] = useState('Yes')
 
   function clearFields() {
-    setEmployer("");
-    setCompany("");
-    setRole("");
-    setMission("");
-    setTimezone("");
-    setNeedW8Form("");
+    setEmployer('')
+    setCompany('')
+    setRole('')
+    setMission('')
+    setTimezone('')
+    setNeedW8Form('')
   }
   return (
     <div className="mx-5 px-5">
@@ -134,7 +135,7 @@ export default function Ineligible() {
         {/* Cover Letter */}
         <div className="col-8">
           <h1 className="text-center mb-5">{`${role} `}Cover Letter</h1>
-          <div className="cover-letter px-5" style={{ fontSize: "1.5rem" }}>
+          <div className="cover-letter px-5" style={{ fontSize: '1.5rem' }}>
             <p>
               Hi {employer}, I’m a very hardworking developer and I’m so excited
               about {company}’s mission {mission}!
@@ -150,13 +151,16 @@ export default function Ineligible() {
             <p>
               I’m willing to take other position that benefits my skillset.
               <br />
-              Please take a look at my portfolio: https://yewkangwei.com/
+              Please take a look at my portfolio:{' '}
+              <Link className="text-danger text-decoration-underline">
+                kangwei.dev
+              </Link>
             </p>
 
             <p>
               I’m willing to take $15k per year of salary and work fully in the
               {` ${timezone}`} time zones. Besides that, I will also
-              {needW8Form === "Yes" ? " fill up the W-8 form and " : " "}manage
+              {needW8Form === 'Yes' ? ' fill up the W-8 form and ' : ' '}manage
               all the taxes myself.
             </p>
 
@@ -177,5 +181,5 @@ export default function Ineligible() {
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -1,20 +1,21 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
+import { Link } from 'react-router'
 
 export default function Eligible() {
-  const [employer, setEmployer] = useState("");
-  const [company, setCompany] = useState("");
-  const [mission, setMission] = useState("");
-  const [timezone, setTimezone] = useState("North America");
-  const [familiarity, setFamiliarity] = useState("");
-  const [needW8Form, setNeedW8Form] = useState("Yes");
+  const [employer, setEmployer] = useState('')
+  const [company, setCompany] = useState('')
+  const [mission, setMission] = useState('')
+  const [timezone, setTimezone] = useState('North America')
+  const [familiarity, setFamiliarity] = useState('')
+  const [needW8Form, setNeedW8Form] = useState('Yes')
 
   function clearFields() {
-    setEmployer("");
-    setCompany("");
-    setMission("");
-    setTimezone("");
-    setFamiliarity("");
-    setNeedW8Form("");
+    setEmployer('')
+    setCompany('')
+    setMission('')
+    setTimezone('')
+    setFamiliarity('')
+    setNeedW8Form('')
   }
   return (
     <div className="mx-5 px-5">
@@ -135,28 +136,31 @@ export default function Eligible() {
         <div className="col-8">
           <h1 className="text-center mb-5">Cover Letter</h1>
           {/* Cover Letter */}
-          <div className="cover-letter px-5" style={{ fontSize: "1.5rem" }}>
+          <div className="cover-letter px-5" style={{ fontSize: '1.5rem' }}>
             <p>
               Hi {employer}, I’m a very hardworking developer and I’m so excited
               about {company}’s mission {mission}!
             </p>
             <p>
-              Please take a look at my portfolio: https://yewkangwei.com/ (I’m
-              willing to take other position that benefits my skillset)
+              Please take a look at my portfolio:{' '}
+              <Link className="text-danger text-decoration-underline">
+                kangwei.dev
+              </Link>{' '}
+              (I’m willing to take other position that benefits my skillset)
             </p>
             <p>
               I love everything related to ReactJS, from static to server-side.
               I can code up to 11 hours every day just because I love it.
               {familiarity
                 ? ` I'm not familiar with ${familiarity}, but `
-                : " "}
+                : ' '}
               I would be happy to learn anything if I could get a chance to be a
               part of {company}.
             </p>
             <p>
               I’m willing to take $15k per year of salary and work fully in the
               {` ${timezone}`} time zones. Besides that, I will also
-              {needW8Form === "Yes" ? " fill up the W-8 form and " : " "} manage
+              {needW8Form === 'Yes' ? ' fill up the W-8 form and ' : ' '} manage
               all the taxes myself.
             </p>
 
@@ -177,5 +181,5 @@ export default function Eligible() {
         </div>
       </div>
     </div>
-  );
+  )
 }
