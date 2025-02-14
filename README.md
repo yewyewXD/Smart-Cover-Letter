@@ -11,8 +11,9 @@ Completed on: 14 Oct 2020 <br>
 
 ## Screenshots
 
-![Landing Page](https://github.com/yewyewXD/Smart-Cover-Letter/blob/master/readme-images/landing.jpg?raw=true 'Landing Page')
+![Landing Page](https://github.com/yewyewXD/Smart-Cover-Letter/blob/master/readme-images/landing.png?raw=true 'Landing Page')
 
 ## Tech/framework used
 
 - React
+- Bootstrap
