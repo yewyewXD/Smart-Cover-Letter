@@ -2,7 +2,9 @@
 
 ## Description
 
-A cover letter generator tailored for junior developers to get their foot in the door. Pair up your portfolio website and a cover letter like this will increase 100x your chance of being seen.<br/>Feel free to fork or contribute to this project.
+A cover letter generator tailored for junior developers to get their foot in the door. Pair up your portfolio website and a cover letter like this will increase 100x your chance of being seen.
+
+Feel free to fork or contribute to this project.
 
 ## Build status
 
